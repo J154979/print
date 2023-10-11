@@ -1,0 +1,1 @@
+jpackage -t exe -i D:\work\java\printert\target -n FF打印 --main-jar printert-0.0.1-SNAPSHOT.jar --icon exe.ico --app-version 1.0.0 --vendor guoguo --win-console --verbose --win-dir-chooser --win-shortcut

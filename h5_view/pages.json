@@ -1,0 +1,139 @@
+{
+    "easycom": {
+        // npm安装的方式不需要前面的"@/"，下载安装的方式需要"@/"
+        // npm安装方式
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+        // 下载安装方式
+        // "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages": [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/index/index",
+            "style": {
+                "scrollIndicator": "none"
+                //当前页面不显示滚动条
+            }
+        },
+        {
+            "path": "pages/index/my",
+            "style": {
+                "navigationBarTitleText": "我"
+            }
+        },
+        {
+            "path": "pages/index/feedback",
+            "style": {
+                "navigationBarTitleText": "BUG反馈"
+            }
+        },
+        {
+            "path": "pages/index/function",
+            "style": {
+                "navigationBarTitleText": "期望功能"
+            }
+        },
+        {
+            "path": "pages/index/login",
+            "style": {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/index/register",
+            "style": {
+                "navigationBarTitleText": "注册",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/index/user",
+            "style": {
+                "navigationBarTitleText": "用户",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/index/changePassword",
+            "style": {
+                "navigationBarTitleText": "修改密码",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/functions/toggleCase/toggleCase",
+            "style": {
+                "navigationBarTitleText": "大小写转换"
+            }
+        },
+        {
+            "path": "pages/functions/barrage/barrage",
+            "style": {
+                "navigationBarTitleText": "手持弹幕",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/functions/WaterMarking/WaterMarking",
+            "style": {
+                "navigationBarTitleText": "图片水印",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/functions/print/print",
+            "style": {
+                "navigationBarTitleText": "自助打印",
+                "enablePullDownRefresh": true
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "萍萍工具箱",
+        "navigationBarBackgroundColor": "#0081ff",
+        "backgroundColor": "#F8F8F8",
+        "pageOrientation": "auto"
+    },
+    "tabBar": {
+        "color": "#333",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "功能",
+                "iconPath": "static/index/tabBarFun.png",
+                "selectedIconPath": "static/index/tabBarFunSelect.png"
+            }
+			// ,
+            // {
+            //     "pagePath": "pages/index/ranking",
+            //     "text": "排行榜",
+            //     "iconPath": "static/index/ranking.png",
+            //     "selectedIconPath": "static/index/rankingselect.png"
+            // },
+            // {
+            //     "pagePath": "pages/index/my",
+            //     "text": "我",
+            //     "iconPath": "static/index/tabBarMy.png",
+            //     "selectedIconPath": "static/index/tabBarMySelect.png"
+            // }
+        ]
+    },
+    "condition": {
+        //模式配置，仅开发期间生效
+        "current": 0,
+        //当前激活的模式(list 的索引项)
+        "list": [
+            {
+                "name": "",
+                //模式名称
+                "path": "",
+                //启动页面，必选
+                "query": ""
+                //启动参数，在页面的onLoad函数里面得到
+            }]
+    }
+
+}

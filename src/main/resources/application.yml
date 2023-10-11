@@ -1,0 +1,20 @@
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML5
+    prefix: 'classpath:/templates/'
+    suffix: .html
+  #文件上传的最大值以及request请求的最大值
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 15MB
+      enabled: true
+server:
+  port: 80
+config:
+  officePath: C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
+  prints: 135-138,LQ-730K,4D300
